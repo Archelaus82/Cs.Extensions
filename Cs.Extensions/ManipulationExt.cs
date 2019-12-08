@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 
-namespace Cs.Extensions
+namespace Extensions
 {
     public class ManipulationExtensionException : Exception
     {

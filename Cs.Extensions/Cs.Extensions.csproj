@@ -47,8 +47,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin_cs\"
-copy "$(TargetPath)" "$(ProjectDir)..\..\bin_cs\"</PostBuildEvent>
+    <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin_merged\"
+copy "$(TargetDir)" "$(ProjectDir)..\..\bin_merged\"
+mkdir "C:\VisualStudio\AddOns\"
+copy "$(TargetDir)" "C:\VisualStudio\AddOns\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
